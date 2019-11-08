@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login page</title>
+	<link rel="stylesheet" type="text/css" href="log.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+function show()
+{
+var nm=document.getElementById("nm").value;
+window.confirm("ARE YOU SURE?");
+if(nm=="")
+{
+window.alert("please fill the data");
+}
+else if(nm=="vikrant"||nm=="rishabh")
+{
+window.alert("welcome MR."+nm);
+}
+else if(nm=="poonam")
+	{
+window.alert("welcome Miss."+nm);
+}
+else
+{
+window.alert("security ALERT");
+}
+}
+</script>
+
+</head>
+<body>
+ 
+	<div class="bgimg">
+		<div class="centerdiv">
+			<img src="logo1.png" id="profilepic">
+			<h2>User Login</h2>
+			<form>
+				<div>
+					<input type="text" name="" class="inputbox" placeholder="Username" id="nm">
+				</div>
+				<br>
+				<div>
+					<input type="password" name="" class="inputbox" placeholder="Password">
+				</div>
+				<br>
+				<div>
+					<button type="submit" name="" class="inputbox" onclick="show()"> Login </button>
+				</div>
+			</form><br>
+			<div class="forgot">
+				<a href="https://mail.google.com">
+				<h4>Forget password?</h4>
+				</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
